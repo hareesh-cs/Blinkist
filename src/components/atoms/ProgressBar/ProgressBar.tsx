@@ -17,8 +17,8 @@ function ProgressBar(): any {
     backgroundColor: '#E1ECFC',
   });
   return (
-    <StyledDiv data-testid="div">
-      <InnerDiv data-testid="div" />
+    <StyledDiv>
+      <InnerDiv />
     </StyledDiv>
   );
 }

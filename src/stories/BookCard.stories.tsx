@@ -1,7 +1,7 @@
-import BookCard from '../components/molecules/BookCard';
+import BookCard from '../components/molecules/BookCard/BookCard';
 
 export default {
-  title: 'BookCard',
+  title: 'molecules/BookCard',
   component: BookCard,
 };
 export const component = () => <BookCard />;

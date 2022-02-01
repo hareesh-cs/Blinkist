@@ -6,7 +6,7 @@ import React from 'react';
 import './App.css';
 import AvatarC from './components/atoms/Avatar/Avatar';
 import Logo from './components/atoms/logo/Logo';
-import BookCard from './components/molecules/BookCard';
+import BookCard from './components/molecules/BookCard/BookCard';
 
 function App() {
   return (

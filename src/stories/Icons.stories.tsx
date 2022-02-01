@@ -22,7 +22,7 @@ import UpArrow from '../components/atoms/Icons/UpArrow';
 import Upload from '../components/atoms/Icons/Upload';
 
 export default {
-  title: 'Icons',
+  title: 'atoms/Icons',
   component: Add,
 };
 export function AddIcon() {

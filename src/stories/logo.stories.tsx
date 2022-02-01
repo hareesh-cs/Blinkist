@@ -6,7 +6,7 @@
 import Logo from '../components/atoms/logo/Logo';
 
 export default {
-  title: 'Logo',
+  title: 'atoms/Logo',
   component: Logo,
 };
 export const component = () => <Logo />;

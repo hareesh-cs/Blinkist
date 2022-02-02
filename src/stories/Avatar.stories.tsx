@@ -1,9 +1,9 @@
 /* eslint-disable react/react-in-jsx-scope */
 
-import Avatar from '../components/atoms/Avatar/Avatar';
+import AvatarC from '../components/atoms/Avatar/Avatar';
 
 export default {
   title: 'atoms/Avatar',
-  component: Avatar,
+  component: AvatarC,
 };
-export const component = () => <Avatar />;
+export const component = () => <AvatarC letter="A" />;

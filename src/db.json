@@ -1,0 +1,191 @@
+{
+  "landingBooks": [
+    {
+      "title": "Bring your Human to Work",
+      "author": "Erica Keswin",
+      "readTime": 13,
+      "reads": null,
+      "imagePath": "/images/1.png",
+      "owned": false
+    },
+    {
+      "title": "Employee to Enterprenuer",
+      "author": "Steve Galveski",
+      "readTime": 15,
+      "reads": null,
+      "imagePath": "/images/11.png",
+      "owned": false
+    },
+    {
+      "title": "Doesn't hurt to Ask",
+      "author": "Trey Gowdy",
+      "readTime": 13,
+      "reads": "1.9",
+      "imagePath": "/images/3.png",
+      "owned": false
+    },
+    {
+      "title": "The Fate of Food",
+      "author": "Amanda Little",
+      "readTime": 12,
+      "reads": "16",
+      "imagePath": "/images/4.png",
+      "owned": false
+    },
+    {
+      "title": "Lives of Stoics",
+      "author": "Ryan Holiday , Stephen Hansel",
+      "readTime": 13,
+      "reads": null,
+      "imagePath": "/images/5.png",
+      "owned": false
+    },
+    {
+      "title": "Loving Your Business",
+      "author": "Debbie King",
+      "readTime": 15,
+      "reads": null,
+      "imagePath": "/images/6.png",
+      "owned": false
+    },
+    {
+      "title": "The Lonely Century",
+      "author": "Noreena Hertz",
+      "readTime": 15,
+      "reads": null,
+      "imagePath": "/images/7.png",
+      "owned": false
+    },
+    {
+      "title": "Eat Better , Feel Better",
+      "author": "Giada De Laurentiis",
+      "readTime": 13,
+      "reads": "1.9",
+      "imagePath": "/images/8.png",
+      "owned": false
+    },
+    {
+      "title": "Dropshipping",
+      "author": "James Moore",
+      "readTime": 12,
+      "reads": null,
+      "imagePath": "/images/9.png",
+      "owned": false
+    }
+  ],
+  "entrePage": {
+    "Trending Blinks": [
+      {
+        "title": "Being Boss",
+        "author": "Kathleen Shannon and Emily...",
+        "readTime": 13,
+        "reads": null,
+        "imagePath": "/images/10.png",
+        "owned": false
+      },
+      {
+        "title": "Beyond Entrepreneurship 2.0",
+        "author": "Jim Collins & Bill Lazier",
+        "readTime": 13,
+        "reads": "1.9",
+        "imagePath": "/images/2.png",
+        "owned": false
+      },
+      {
+        "title": "Employee to Entrepreneur",
+        "author": "Steve Glaveski",
+        "readTime": 14,
+        "reads": "1.9",
+        "imagePath": "/images/11.png",
+        "owned": false
+      },
+      {
+        "title": "The Fate of Food",
+        "author": "Amanda Little",
+        "readTime": 12,
+        "reads": "16",
+        "imagePath": "/images/4.png",
+        "owned": false
+      },
+      {
+        "title": "Lives of Stoics",
+        "author": "Ryan Holiday , Stephen Hansel",
+        "readTime": 13,
+        "reads": null,
+        "imagePath": "/images/5.png",
+        "owned": false
+      },
+      {
+        "title": "Loving Your Business",
+        "author": "Debbie King",
+        "readTime": 13,
+        "reads": null,
+        "imagePath": "/images/6.png",
+        "owned": false
+      }
+    ],
+    "Just Added": [
+      {
+        "title": "The Lonely Century",
+        "author": "Noreena Hertz",
+        "readTime": 15,
+        "reads": null,
+        "imagePath": "/images/7.png",
+        "owned": false
+      },
+      {
+        "title": "Eat Better , Feel Better",
+        "author": "Giada De Laurentiis",
+        "readTime": 13,
+        "reads": "1.9",
+        "imagePath": "/images/8.png",
+        "owned": false
+      },
+      {
+        "title": "Dropshipping",
+        "author": "James Moore",
+        "readTime": 12,
+        "reads": null,
+        "imagePath": "/images/9.png",
+        "owned": false
+      }
+    ],
+    "Featured Audio Blinks": [
+      {
+        "title": "Bring your Human to Work",
+        "author": "Erica Keswin",
+        "readTime": 13,
+        "reads": null,
+        "imagePath": "/images/1.png",
+        "owned": false
+      },
+      {
+        "title": "Beyond Entrepreneurship 2.0",
+        "author": "Jim Collins & Bill Lazier",
+        "readTime": 13,
+        "reads": "1.9",
+        "imagePath": "/images/2.png",
+        "owned": false
+      },
+      {
+        "title": "Doesn't hurt to Ask",
+        "author": "Trey Gowdy",
+        "readTime": 13,
+        "reads": "1.9",
+        "imagePath": "/images/3.png",
+        "owned": false
+      }
+    ]
+  },
+
+  "Beyond Entrepreneurship 2.0": {
+    "subtitle": "Turning Your Business into an Enduring Great Company",
+    "title": "Beyond Entrepreneurship 2.0",
+    "readTime": 15,
+    "imagePath": "/images/2.png",
+    "author": "Jim Collins & Bill Lazier",
+    "synopsis": "Beyond Entrepreneurship 2.0 (2020) updates Jim Collins and Bill Lazier’s essential 1992 business handbook, Beyond Entrepreneurship for the entrepreneurs, visionaries, and innovators of today. This new edition combines the timeless business advice and strategy of the original text, supplemented with cutting-edge insights and case studies pertinent to today’s business world.",
+    "completed": false,
+    "reads": null
+  }
+}

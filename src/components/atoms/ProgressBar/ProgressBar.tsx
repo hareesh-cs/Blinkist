@@ -1,7 +1,11 @@
-/* eslint-disable @typescript-eslint/no-use-before-define */
+/* eslint-disable operator-linebreak */
 import styled from '@emotion/styled';
 
-function ProgressBar(): any {
+export interface ProgressBarProps {
+  percentComplete?: number;
+}
+
+function ProgressBar({ percentComplete }: ProgressBarProps) {
   const StyledDiv = styled('div')({
     width: '100%',
     height: '15px',
@@ -9,8 +13,12 @@ function ProgressBar(): any {
     padding: 0,
     margin: 0,
   });
+  const percentCompleted =
+    percentComplete !== undefined && percentComplete !== null
+      ? `${percentComplete}%`
+      : '30%';
   const InnerDiv = styled('div')({
-    width: '30%',
+    width: percentCompleted,
     height: '15px',
     margin: 0,
     padding: 0,

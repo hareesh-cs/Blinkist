@@ -2,28 +2,31 @@
 import styled from '@emotion/styled';
 
 export interface ProgressBarProps {
-  percentComplete?: number;
+  progress?: number;
 }
 
-function ProgressBar({ percentComplete }: ProgressBarProps) {
+function ProgressBar({ progress }: ProgressBarProps) {
   const StyledDiv = styled('div')({
     width: '100%',
     height: '15px',
     backgroundColor: '#f1f6f4',
     padding: 0,
-    margin: 0,
+    marginTop: 0,
+    border: '1px',
+    boxSizing: 'border-box',
+    borderRadius: '0px 0px 8px 8px',
   });
-  const percentCompleted =
-    percentComplete !== undefined && percentComplete !== null
-      ? `${percentComplete}%`
-      : '30%';
+  const progressed =
+    progress !== undefined && progress !== null ? `${progress}%` : '30%';
+
   const InnerDiv = styled('div')({
-    width: percentCompleted,
+    width: progressed,
     height: '15px',
-    margin: 0,
+    marginTop: 0,
     padding: 0,
     backgroundColor: '#E1ECFC',
   });
+
   return (
     <StyledDiv>
       <InnerDiv />

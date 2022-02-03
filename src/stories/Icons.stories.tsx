@@ -1,94 +1,226 @@
-import Add from '../components/atoms/Icons/Add';
-import Career from '../components/atoms/Icons/Career';
-import Checked from '../components/atoms/Icons/Checked';
-import ComSkills from '../components/atoms/Icons/ComSkills';
-import CorporateCulture from '../components/atoms/Icons/CorporateCulture';
-import DownArrow from '../components/atoms/Icons/DownArrow';
-import Ecomnomics from '../components/atoms/Icons/Ecomnomics';
-import Edit from '../components/atoms/Icons/Edit';
-import Entrepreneurship from '../components/atoms/Icons/Entrepreneurship';
-import Motivation from '../components/atoms/Icons/Motivation';
-import Nature from '../components/atoms/Icons/Nature';
-import Person from '../components/atoms/Icons/PersonIcon';
-import Politics from '../components/atoms/Icons/Politics';
-import ReadAgain from '../components/atoms/Icons/ReadAgain';
-import Remove from '../components/atoms/Icons/Remove';
-import Right from '../components/atoms/Icons/Right';
-import Search from '../components/atoms/Icons/Search';
-import SexRelation from '../components/atoms/Icons/SexRelation';
-import Time from '../components/atoms/Icons/Time';
-import UnChecked from '../components/atoms/Icons/UnChecked';
-import UpArrow from '../components/atoms/Icons/UpArrow';
-import Upload from '../components/atoms/Icons/Upload';
+/* eslint-disable import/order */
+/* eslint-disable @typescript-eslint/no-use-before-define */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import ShowIcon from '../components/atoms/Icons/showIcon';
+import iconPath from '../components/atoms/Icons/iconPath';
 
 export default {
   title: 'atoms/Icons',
-  component: Add,
+  component: 'Icons',
 };
-export function AddIcon() {
-  return <Add />;
+export function addIcon() {
+  return (
+    <ShowIcon width="14" height="14" viewBox="0 0 14 14" d={iconPath.addIcon} />
+  );
 }
 export function SearchIcon() {
-  return <Search />;
+  return (
+    <ShowIcon
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      d={iconPath.searchIcon}
+    />
+  );
 }
 export function DownArrowIcon() {
-  return <DownArrow />;
+  return (
+    <ShowIcon
+      width="14"
+      height="8"
+      viewBox="0 0 14 8"
+      d={iconPath.downArrowIcon}
+    />
+  );
 }
 export function UpArrowIcon() {
-  return <UpArrow />;
+  return (
+    <ShowIcon
+      width="14"
+      height="8"
+      viewBox="0 0 14 8"
+      d={iconPath.upArrowIcon}
+    />
+  );
 }
 export function TimeIcon() {
-  return <Time />;
+  return (
+    <ShowIcon
+      width="18"
+      height="18"
+      viewBox="0 0 18 18"
+      d={iconPath.timeIcon}
+    />
+  );
 }
 export function EntrepreneurshipIcon() {
-  return <Entrepreneurship />;
+  return (
+    <ShowIcon
+      width="16"
+      height="23"
+      viewBox="0 0 16 23"
+      d={iconPath.entrepreneurshipIcon}
+    />
+  );
 }
 export function EconomicsIcon() {
-  return <Ecomnomics />;
+  return (
+    <ShowIcon
+      width="19"
+      height="22"
+      viewBox="0 0 19 22"
+      d={iconPath.economicsIcon}
+    />
+  );
 }
 export function CorporateCultureIcon() {
-  return <CorporateCulture />;
+  return (
+    <ShowIcon
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      d={iconPath.corporateCultureIcon}
+    />
+  );
 }
 export function SexRelationIcon() {
-  return <SexRelation />;
+  return (
+    <ShowIcon
+      width="23"
+      height="19"
+      viewBox="0 0 23 19"
+      d={iconPath.sexRelationIcon}
+    />
+  );
 }
 export function PoliticsIcon() {
-  return <Politics />;
+  return (
+    <ShowIcon
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      d={iconPath.politicsIcon}
+    />
+  );
 }
 export function ComSkillsIcon() {
-  return <ComSkills />;
+  return (
+    <ShowIcon
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      d={iconPath.comSkillsIcon}
+    />
+  );
 }
 export function MotivationIcon() {
-  return <Motivation />;
+  return (
+    <ShowIcon
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      d={iconPath.motivationIcon}
+    />
+  );
 }
 export function CareerIcon() {
-  return <Career />;
+  return (
+    <ShowIcon
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      d={iconPath.careerIcon}
+    />
+  );
 }
 export function NatureIcon() {
-  return <Nature />;
+  return (
+    <ShowIcon
+      width="18"
+      height="19"
+      viewBox="0 0 18 19"
+      d={iconPath.natureIcon}
+    />
+  );
 }
 export function RemoveIcon() {
-  return <Remove />;
+  return (
+    <ShowIcon
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      d={iconPath.removeIcon}
+    />
+  );
 }
 export function ReadAgainIcon() {
-  return <ReadAgain />;
+  return (
+    <ShowIcon
+      width="20"
+      height="22"
+      viewBox="0 0 20 22"
+      d={iconPath.readAgainIcon}
+    />
+  );
 }
 
 export function UnCheckedIcon() {
-  return <UnChecked />;
+  return (
+    <ShowIcon
+      width="21"
+      height="20"
+      viewBox="0 0 21 20"
+      d={iconPath.unCheckedIcon}
+    />
+  );
 }
 export function CheckedIcon() {
-  return <Checked />;
+  return (
+    <ShowIcon
+      width="21"
+      height="21"
+      viewBox="0 0 21 21"
+      d={iconPath.checkedIcon}
+    />
+  );
 }
 export function UploadIcon() {
-  return <Upload />;
+  return (
+    <ShowIcon
+      width="22"
+      height="18"
+      viewBox="0 0 22 18"
+      d={iconPath.uploadIcon}
+    />
+  );
 }
 export function EditIcon() {
-  return <Edit />;
+  return (
+    <ShowIcon
+      width="18"
+      height="18"
+      viewBox="0 0 18 18"
+      d={iconPath.editIcon}
+    />
+  );
 }
 export function RightIcon() {
-  return <Right />;
+  return (
+    <ShowIcon
+      width="17"
+      height="12"
+      viewBox="0 0 13 18"
+      d={iconPath.editIcon}
+    />
+  );
 }
 export function PersonIcon() {
-  return <Person />;
+  return (
+    <ShowIcon
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      d={iconPath.personIcon}
+    />
+  );
 }

@@ -10,10 +10,11 @@ export default {
 
 export const component = () => (
   <BookCard
-    imagePath={image2}
+    image={image2}
     title="Bring your Human to Work"
     author="Erica Keswin"
-    readTime="13"
+    time="13"
     reads="1.5"
+    progress={88}
   />
 );

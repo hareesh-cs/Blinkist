@@ -1,20 +1,36 @@
+/* eslint-disable import/no-unresolved */
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/function-component-definition */
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable @typescript-eslint/no-var-requires */
+import { ThemeProvider } from '@mui/material';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import BookCard from '../components/molecules/BookCard/BookCard';
+import theme from '../Theme/theme';
 
 const image2 = require('../components/atoms/Images/2.png');
 
 export default {
   title: 'molecules/BookCard',
   component: BookCard,
-};
+  decorators: [
+    (Story) => (
+      <ThemeProvider theme={theme}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+} as ComponentMeta<typeof BookCard>;
 
-export const component = () => (
-  <BookCard
-    image={image2}
-    title="Bring your Human to Work"
-    author="Erica Keswin"
-    time="13"
-    reads="1.5"
-    progress={88}
-  />
+const Template: ComponentStory<typeof BookCard> = (args) => (
+  <BookCard {...args} />
 );
+export const bookCard = Template.bind({});
+bookCard.args = {
+  image: image2,
+  title: 'Bring your Human to Work',
+  author: 'Erica Keswin',
+  time: '13',
+  reads: '1.5',
+  progress: 88,
+};

@@ -1,51 +1,37 @@
-/* eslint-disable react/require-default-props */
-import { styled } from '@mui/material';
+/* eslint-disable object-curly-newline */
+import React from 'react';
+import SearchIcon from '@mui/icons-material/Search';
+import { Box, Container, Divider, Typography } from '@mui/material';
 
-import ShowIcon from '../../atoms/Icons/showIcon';
-import iconPath from '../../atoms/Icons/iconPath';
-
-interface SearchBarProps {
-  placeholder?: string;
-}
-
-function SearchBar({ placeholder }: SearchBarProps) {
-  const StyledDiv = styled('div')({
-    marginLeft: '18.5%',
-    marginTop: '58px',
-    width: '45%',
-    padding: '0px',
-    svg: {
-      position: 'absolute',
-      padding: '2px',
-    },
-    input: {
-      paddingLeft: '6%',
-      paddingBottom: '1%',
-      fontSize: '24px',
-      outline: '0',
-      lineHeight: '30px',
-      borderWidth: '0 0 2px',
-    },
-  });
-  const Input = styled('input')({
-    '::placeholder': {
-      fontWeight: '700',
-      fontSize: '24px',
-      lineHeight: '30.17px',
-      color: 'textColors.textColor3',
-    },
-  });
+export function SearchField() {
   return (
-    <StyledDiv>
-      <ShowIcon
-        width="20"
-        height="20"
-        viewBox="0 0 20 20"
-        d={iconPath.searchIcon}
-      />
-      <Input type="text" placeholder={placeholder} size={50} />
-    </StyledDiv>
+    // <Box sx={{width:1440,mb:'80px'}}>
+    <Container>
+      <Box sx={{ ml: 1.5, mb: '80px' }} data-testid="search">
+        <Box
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            mb: '16px',
+            justifyContent: 'space-between',
+            width: 330,
+            height: 30,
+          }}
+        >
+          <SearchIcon fontSize="large" />
+          <Typography
+            fontFamily="Cera Pro"
+            fontWeight="700"
+            variant="h3"
+            sx={{ color: '#6D787E', fontSize: '24px' }}
+          >
+            Search by title or author
+          </Typography>
+        </Box>
+        <Box sx={{ width: 658 }}>
+          <Divider sx={{ border: '2px solid #6D787E', bgcolor: '#6D787E' }} />
+        </Box>
+      </Box>
+    </Container>
   );
 }
-
-export default SearchBar;

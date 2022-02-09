@@ -3,11 +3,16 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { Meta } from '@storybook/react';
-import { SearchField } from '../components/molecules/searchBar/SearchBar';
+import { BrowserRouter } from 'react-router-dom';
+import Header from '../components/organisms/header/Header';
 
 export default {
-  title: 'molecules/SearchField',
-  component: SearchField,
+  title: 'organisms/Header',
+  component: Header,
 } as Meta;
 
-export const primary = () => <SearchField />;
+export const primary = () => (
+  <BrowserRouter>
+    <Header />
+  </BrowserRouter>
+);

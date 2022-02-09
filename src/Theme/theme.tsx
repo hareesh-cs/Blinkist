@@ -1,4 +1,5 @@
 import { createTheme } from '@mui/material';
+import '../index.css';
 
 declare module '@mui/material/styles' {
   // allow configuration using `createTheme`

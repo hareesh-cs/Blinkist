@@ -28,8 +28,8 @@ function ProgressBar({ progress }: ProgressBarProps) {
   });
 
   return (
-    <StyledDiv>
-      <InnerDiv />
+    <StyledDiv data-testid="progressBar">
+      <InnerDiv data-testid="progressBar" />
     </StyledDiv>
   );
 }

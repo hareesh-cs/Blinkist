@@ -13,8 +13,8 @@ const StyledBox = styled(Box)`
   border-radius: 8px;
   background: #ffffff;
   justify-content: center;
-  margin-top: 12.5px;
-  margin-left: -14px;
+  margin-top: 11px;
+  margin-left: -16px;
   cursor: pointer;
 
   &:hover {
@@ -27,7 +27,7 @@ export function AddToLib() {
   return (
     <StyledBox>
       <AddIcon sx={{ pr: 2 }} />
-      <Typography fontSize="16px" fontFamily="Cera Pro" data-testid="AddButton">
+      <Typography fontSize="16px" fontFamily="Cera Pro">
         Add to lib
       </Typography>
     </StyledBox>

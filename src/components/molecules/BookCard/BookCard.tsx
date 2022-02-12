@@ -11,10 +11,12 @@ import {
   CardContent,
   IconButton,
 } from '@mui/material';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import { Link } from 'react-router-dom';
+import ShowIcon from '../../atoms/Icons/showIcon';
+import iconPath from '../../atoms/Icons/iconPath';
 import { AddToLib } from '../AddToLib/AddToLib';
+import ProgressBar from '../../atoms/ProgressBar/ProgressBar';
 
 interface BookCardprops {
   id?: number;
@@ -41,20 +43,22 @@ function BookCard({
       <Card
         data-testid="card"
         sx={{
-          width: 284,
-          height: 466,
+          width: '284px',
+          height: '466px',
           borderRadius: 2,
           border: '1 solid #E1ECFC',
           background: '#FFFFFF',
         }}
       >
-        <CardMedia
-          component="img"
-          image={image}
-          alt="book pic"
-          height="292px"
-          width="294.1px"
-        />
+        <Link to="/Entrepreneurship/BookDetails">
+          <CardMedia
+            component="img"
+            image={image}
+            alt="book pic"
+            height="292px"
+            width="294.1px"
+          />
+        </Link>
         <CardContent>
           <Typography
             sx={{
@@ -94,7 +98,12 @@ function BookCard({
             }}
           >
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <AccessTimeIcon fontSize="small" />
+              <ShowIcon
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                d={iconPath.timeIcon}
+              />
               <Typography
                 sx={{ fontSize: 14, fontFamily: 'Cera Pro' }}
                 variant="caption2"
@@ -105,7 +114,12 @@ function BookCard({
             </Box>
             {reads && (
               <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                <PersonOutlineIcon fontSize="small" />
+                <ShowIcon
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  d={iconPath.personIcon}
+                />
                 <Typography
                   sx={{ fontSize: 14, fontFamily: 'Cera Pro' }}
                   variant="caption2"
@@ -129,7 +143,6 @@ function BookCard({
             >
               <IconButton>
                 <strong>
-                  {' '}
                   <MoreHorizIcon fontSize="medium" />
                 </strong>
               </IconButton>
@@ -146,7 +159,7 @@ function BookCard({
             boxSizing: 'border-box',
           }}
         >
-          <Box sx={{ width: progress, height: 15, bgcolor: '#E1ECFC' }} />
+          <ProgressBar progress={progress} />
         </Box>
       </Card>
     </Grid>

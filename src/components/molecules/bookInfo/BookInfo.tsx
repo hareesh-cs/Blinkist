@@ -58,9 +58,13 @@ export default function BookInfo() {
   };
 
   return (
-    // <Box sx={{ width: '100%' }}>
     <Container>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+      <Box
+        sx={{
+          borderBottom: 1,
+          borderColor: 'divider',
+        }}
+      >
         <Tabs
           value={value}
           onChange={handleChange}
@@ -113,19 +117,21 @@ export default function BookInfo() {
             {...a11yProps(2)}
           />
         </Tabs>
+        <Box>
+          <TabPanel value={value} index={0}>
+            <Typography variant="body2" sx={{ fontFamily: 'Cera Pro' }}>
+              Beyond Entrepreneurship 2.0 (2020) updates Jim Collins and Bill
+              Lazier’s essential 1992 business handbook, Beyond Entrepreneurship
+              for the entrepreneurs, visionaries, and innovators of today. This
+              new edition combines the timeless business advice and strategy of
+              the original text, supplemented with cutting-edge insights and
+              case studies pertinent to today’s business world.
+            </Typography>
+          </TabPanel>
+          <TabPanel value={value} index={1} />
+          <TabPanel value={value} index={2} />
+        </Box>
       </Box>
-      <TabPanel value={value} index={0}>
-        <Typography sx={{ fontFamily: 'Cera Pro' }}>
-          Beyond Entrepreneurship 2.0 (2020) updates Jim Collins and Bill
-          Lazier’s essential 1992 business handbook, Beyond Entrepreneurship for
-          the entrepreneurs, visionaries, and innovators of today. This new
-          edition combines the timeless business advice and strategy of the
-          original text, supplemented with cutting-edge insights and case
-          studies pertinent to today’s business world.
-        </Typography>
-      </TabPanel>
-      <TabPanel value={value} index={1} />
-      <TabPanel value={value} index={2} />
     </Container>
   );
 }

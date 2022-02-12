@@ -11,7 +11,7 @@ export default {
   component: Header,
 } as Meta;
 
-export const primary = () => (
+export const HeaderDemo = () => (
   <BrowserRouter>
     <Header />
   </BrowserRouter>

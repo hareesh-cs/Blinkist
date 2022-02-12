@@ -6,7 +6,7 @@
     "time": "13",
     "reads": "",
     "image": "/Images/10.png",
-    "status": false,
+    "status": true,
     "progress": 88
   },
   {
@@ -15,7 +15,7 @@
     "author": "Jim Collins & Bill Lazier",
     "time": "13",
     "reads": "1.9k",
-    "image": "Images/2.png",
+    "image": "/Images/2.png",
     "status": true,
     "progress": 88
   },
@@ -25,7 +25,7 @@
     "author": "Steve Glaveski",
     "time": "14",
     "reads": "1.9k",
-    "image": "Images/3.png",
+    "image": "/Images/3.png",
     "status": true,
     "progress": 88
   },
@@ -35,7 +35,7 @@
     "author": "Amanda Little",
     "time": "12",
     "reads": "16k",
-    "image": "Images/4.png",
+    "image": "/Images/4.png",
     "status": true,
     "progress": 88
   },
@@ -45,7 +45,7 @@
     "author": "Ryan Holiday, Stephen Hansel",
     "time": "13",
     "reads": "",
-    "image": "Images/5.png",
+    "image": "/Images/5.png",
     "status": true,
     "progress": 88
   },
@@ -55,7 +55,7 @@
     "author": "Debbie King",
     "time": "13",
     "reads": "",
-    "image": "Images/6.png",
+    "image": "/Images/6.png",
     "status": true,
     "progress": 88
   },
@@ -65,7 +65,7 @@
     "author": "Noreena Hertz",
     "time": "15",
     "reads": "",
-    "image": "Images/7.png",
+    "image": "/Images/11.png",
     "status": true,
     "progress": 88
   },
@@ -75,7 +75,7 @@
     "author": "Giada De Laurentiis",
     "time": "13",
     "reads": "1.9k",
-    "image": "Images/8.png",
+    "image": "/Images/8.png",
     "status": true,
     "progress": 88
   },
@@ -85,17 +85,7 @@
     "author": "James Moore",
     "time": "12",
     "reads": "",
-    "image": "Images/9.png",
-    "status": true,
-    "progress": 88
-  },
-  {
-    "id": 10,
-    "title": "Being Boss",
-    "author": "Kathleen Shannon and Emily...",
-    "time": "13",
-    "reads": "",
-    "image": "Images/11.png",
+    "image": "/Images/9.png",
     "status": true,
     "progress": 88
   }

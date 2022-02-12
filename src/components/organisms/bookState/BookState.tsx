@@ -53,7 +53,7 @@ export default function BookState() {
   };
 
   return (
-    // <Box sx={{width:1440,mt:'70px'}}>
+
     <Container>
       <Box sx={{ ml: 1.5, mt: '70px' }}>
         <Box sx={{ width: 200, height: 45, mb: '60px' }}>

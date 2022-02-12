@@ -28,9 +28,10 @@ const Template: ComponentStory<typeof BookCard> = (args) => (
 export const bookCard = Template.bind({});
 bookCard.args = {
   image: image2,
-  title: 'Bring your Human to Work',
+  title: 'Bring your Human',
   author: 'Erica Keswin',
   time: '13',
   reads: '1.5',
+  status: true,
   progress: 88,
 };

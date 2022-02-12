@@ -4,7 +4,7 @@ import BookCard from '../../molecules/BookCard/BookCard';
 
 function Finished() {
   return (
-    <Box sx={{ maxWidth: 1440, maxHeight: 1443 }} data-testid="finished">
+    <Box sx={{ maxWidth: 1440, maxHeight: 1443 }}>
       <Container sx={{ width: 923, ml: -6 }}>
         <BookCard
           title="Beyond Entrepreneurship"

@@ -33,7 +33,7 @@ function Footer() {
                   src={logo}
                   alt="Blinkist logo"
                   width="99.1px"
-                  height="44px"
+                  height="24px"
                 />
               </Box>
               <Box sx={{ pb: '132px' }}>

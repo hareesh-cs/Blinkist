@@ -4,12 +4,13 @@
 /* eslint-disable react/function-component-definition */
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { ThemeProvider } from '@mui/material';
 import IconButton, {
   IconButtonProps,
 } from '../components/atoms/iconButton/IconButton';
 import theme from '../Theme/theme';
+import ShowIcon from '../components/atoms/Icons/showIcon';
+import iconPath from '../components/atoms/Icons/iconPath';
 
 export default {
   title: 'atoms/IconButton',
@@ -30,5 +31,12 @@ const Template: Story<IconButtonProps> = (args) => <IconButton {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  children: <ExpandMoreIcon />,
+  children: (
+    <ShowIcon
+      width="14"
+      height="8"
+      viewBox="0 0 14 8"
+      d={iconPath.downArrowIcon}
+    />
+  ),
 };

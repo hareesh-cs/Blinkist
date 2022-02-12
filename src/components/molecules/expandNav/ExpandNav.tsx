@@ -12,40 +12,20 @@ import {
   styled,
   Container,
 } from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import NotificationImportantOutlinedIcon from '@mui/icons-material/NotificationImportantOutlined';
-import ScienceOutlinedIcon from '@mui/icons-material/ScienceOutlined';
-import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
-import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
-import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
-import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
-import SmsOutlinedIcon from '@mui/icons-material/SmsOutlined';
-import {
-  FaBullseye,
-  FaChartLine,
-  FaHistory,
-  FaHourglassEnd,
-  FaLandmark,
-  FaLeaf,
-  FaRegHospital,
-  FaRegLightbulb,
-} from 'react-icons/fa';
-import BusinessCenterSharpIcon from '@mui/icons-material/BusinessCenterSharp';
-import FiberSmartRecordOutlinedIcon from '@mui/icons-material/FiberSmartRecordOutlined';
 import { Link } from 'react-router-dom';
+import ShowIcon from '../../atoms/Icons/showIcon';
+import iconPath from '../../atoms/Icons/iconPath';
 
 const style = {
   position: 'absolute' as const,
   top: '88%',
   left: '-30%',
-  width: 1833,
+  width: 1840,
   height: 398,
   bgcolor: '#F1F6F4',
-  border: '2px solid #000',
 };
 
-const FBox = styled(Box)`
+const Menu = styled(Box)`
   display: flex;
   align-items: center;
   &:hover {
@@ -57,6 +37,7 @@ const HeadTypography = styled(Typography)`
   font-size: 16px;
   font-weight: bold;
   font-family: Cera Pro;
+  line-height: 24px;i
   color: #6d787e;
   &:hover {
     color: #116be9;
@@ -91,7 +72,7 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
   return <IconButton {...other} />;
 })(({ theme, expand }) => ({
   transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-  marginLeft: 'auto',
+  marginLeft: 6,
   transition: theme.transitions.create('transform', {
     duration: theme.transitions.duration.shortest,
   }),
@@ -99,14 +80,14 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
 
 const UBox = styled(Box)`
   &:hover {
-    border-bottom-color: green;
+    border-bottom-color: #2ce080;
   }
 `;
 
 export default function ExpandNav() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(!open);
-  const handleClose = () => setOpen(false);
+  const handleClose = () => setOpen(!open);
 
   return (
     <>
@@ -119,15 +100,18 @@ export default function ExpandNav() {
           sx={{
             display: 'flex',
             alignItems: 'center',
-            borderBottom: '4px solid white',
+            borderBottom: '2px solid white',
           }}
         >
           <Typography sx={{ color: 'black', cursor: 'pointer' }} fontSize={16}>
             Explore
           </Typography>
           <ExpandMore expand={open} onClick={handleClose}>
-            <ExpandMoreIcon
-              sx={{ color: 'black', cursor: 'pointer', ml: -0.5 }}
+            <ShowIcon
+              width="14"
+              height="8"
+              viewBox="0 0 14 8"
+              d={iconPath.downArrowIcon}
             />
           </ExpandMore>
         </UBox>
@@ -135,18 +119,18 @@ export default function ExpandNav() {
       {open && (
         <Box
           onClick={handleClose}
-          sx={{ zIndex: 100, width: 1440 }}
+          sx={{ zIndex: 1, width: 10 }}
           data-testid="popup"
         >
           <Box sx={style}>
             <Container sx={{ pt: 2 }}>
-              <Box sx={{ ml: 3.3 }}>
-                <Stack direction="row" spacing="130px" sx={{ pb: '24px' }}>
+              <Box sx={{ ml: 4 }}>
+                <Stack direction="row" spacing="180px" sx={{ pb: '24px' }}>
                   <HeadTypography>Explore by category</HeadTypography>
                   <HeadTypography>See recently added titles</HeadTypography>
                   <HeadTypography>See popular titles</HeadTypography>
                 </Stack>
-                <Divider sx={{ border: '1px solid black' }} />
+                <Divider sx={{ border: '2px solid black' }} />
                 <Box
                   sx={{
                     pt: '32px',
@@ -156,89 +140,125 @@ export default function ExpandNav() {
                   }}
                 >
                   <Stack direction="column" spacing="20.11px">
-                    <FBox>
-                      <NotificationImportantOutlinedIcon fontSize="small" />
+                    <Menu>
+                      <ShowIcon
+                        width="16"
+                        height="23"
+                        viewBox="0 0 16 23"
+                        d={iconPath.entrepreneurshipIcon}
+                      />
                       <StyledTypography sx={{ textDecoration: 'none' }}>
                         <StyledLink to="/Entrepreneurship">
                           Entrepreneurship
                         </StyledLink>
                       </StyledTypography>
-                    </FBox>
+                    </Menu>
 
-                    <FBox>
-                      <ScienceOutlinedIcon fontSize="small" />
+                    <Menu>
+                      <ShowIcon
+                        width="18"
+                        height="20"
+                        viewBox="0 0 18 20"
+                        d={iconPath.scienceIcon}
+                      />
                       <StyledTypography>Science</StyledTypography>
-                    </FBox>
-                    <FBox>
-                      <FiberSmartRecordOutlinedIcon fontSize="small" />
+                    </Menu>
+                    <Menu>
+                      <ShowIcon
+                        width="19"
+                        height="22"
+                        viewBox="0 0 19 22"
+                        d={iconPath.economicsIcon}
+                      />
                       <StyledTypography>Economics</StyledTypography>
-                    </FBox>
-                    <FBox>
-                      <BusinessCenterSharpIcon fontSize="small" />
+                    </Menu>
+                    <Menu>
+                      <ShowIcon
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        d={iconPath.corporateCultureIcon}
+                      />
                       <StyledTypography>Corporate Culture</StyledTypography>
-                    </FBox>
-                    <FBox>
-                      <PsychologyOutlinedIcon fontSize="small" />
+                    </Menu>
+                    <Menu>
+                      <ShowIcon
+                        width="19"
+                        height="20"
+                        viewBox="0 0 19 20"
+                        d={iconPath.psychologyIcon}
+                      />
                       <StyledTypography>Psychology</StyledTypography>
-                    </FBox>
-                    <FBox>
-                      <FaLeaf />
+                    </Menu>
+                    <Menu>
+                      <ShowIcon
+                        width="18"
+                        height="19"
+                        viewBox="0 0 18 19"
+                        d={iconPath.natureIcon}
+                      />
                       <StyledTypography>Nature & Environment</StyledTypography>
-                    </FBox>
+                    </Menu>
                   </Stack>
                   <Stack direction="column" spacing="20.11px">
-                    <FBox>
-                      <FaLandmark />
+                    <Menu>
+                      <ShowIcon
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        d={iconPath.politicsIcon}
+                      />
                       <StyledTypography>Politics</StyledTypography>
-                    </FBox>
-                    <FBox>
-                      <FaRegHospital />
+                    </Menu>
+                    <Menu>
+                      <ShowIcon
+                        width="22"
+                        height="20"
+                        viewBox="0 0 22 20"
+                        d={iconPath.hospitalIcon}
+                      />
                       <StyledTypography>Health & Nutrition</StyledTypography>
-                    </FBox>
-                    <FBox>
-                      <FaHistory />
-                      <StyledTypography>History</StyledTypography>
-                    </FBox>
-                    <FBox>
-                      <FaRegLightbulb />
+                    </Menu>
+                    <Menu>
+                      <ShowIcon
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        d={iconPath.motivationIcon}
+                      />
                       <StyledTypography>
                         Motivation & Inspiration
                       </StyledTypography>
-                    </FBox>
-                    <FBox>
-                      <FaHourglassEnd />
-                      <StyledTypography>Productivity</StyledTypography>
-                    </FBox>
-                    <FBox>
-                      <FaBullseye />
+                    </Menu>
+                    <Menu>
+                      <ShowIcon
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        d={iconPath.careerIcon}
+                      />
                       <StyledTypography>Career & Success</StyledTypography>
-                    </FBox>
+                    </Menu>
                   </Stack>
                   <Stack direction="column" spacing="20.11px">
-                    <FBox>
-                      <FaChartLine />
-                      <StyledTypography>Marketing & Sales</StyledTypography>
-                    </FBox>
-                    <FBox>
-                      <SignalCellularAltIcon fontSize="small" />
-                      <StyledTypography>Personal Development</StyledTypography>
-                    </FBox>
-                    <FBox>
-                      <SmsOutlinedIcon fontSize="small" />
+                    <Menu>
+                      <ShowIcon
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        d={iconPath.comSkillsIcon}
+                      />
                       <StyledTypography>Communication Skills</StyledTypography>
-                    </FBox>
-                    <FBox>
-                      <AccountBalanceWalletOutlinedIcon fontSize="small" />
-                      <StyledTypography>Money & Investments</StyledTypography>
-                    </FBox>
-                    <FBox>
-                      <FavoriteBorderOutlinedIcon fontSize="small" />
+                    </Menu>
+                    <Menu>
+                      <ShowIcon
+                        width="23"
+                        height="19"
+                        viewBox="0 0 23 19"
+                        d={iconPath.sexRelationIcon}
+                      />
                       <StyledTypography>Sex & Relationship</StyledTypography>
-                    </FBox>
-                    <FBox>
-                      <SchoolOutlinedIcon fontSize="small" />
-                      <StyledTypography>Education</StyledTypography>
-                    </FBox>
+                    </Menu>
                   </Stack>
                 </Box>
               </Box>

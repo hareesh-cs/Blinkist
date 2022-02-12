@@ -2,12 +2,11 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import { Box, Container, Grid, Typography } from '@mui/material';
 import BookCard from '../../molecules/BookCard/BookCard';
-import books from '../../../db.json';
+import books from '../../../db1.json';
 
 export function EBooks() {
   return (
-    <>
-      {/* <Box sx={{maxWidth:1440,maxHeight:2856,ml:1}}> */}
+    <div>
       <Container>
         <Box data-testid="ebooks">
           <Typography
@@ -36,6 +35,6 @@ export function EBooks() {
           </Grid>
         </Box>
       </Container>
-    </>
+    </div>
   );
 }

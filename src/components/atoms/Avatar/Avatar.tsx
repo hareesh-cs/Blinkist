@@ -6,7 +6,10 @@ export interface AvatarProps {
 }
 function AvatarC({ letter }: AvatarProps) {
   return (
-    <Avatar sx={{ bgcolor: '#69A6E3', display: 'flex', alignItems: 'center' }}>
+    <Avatar
+      sx={{ bgcolor: '#69A6E3', display: 'flex', alignItems: 'center' }}
+      data-testid="Avatar"
+    >
       {letter}
     </Avatar>
   );

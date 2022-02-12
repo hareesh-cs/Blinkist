@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material';
+import { createTheme } from '@mui/material/styles';
 import '../index.css';
 
 declare module '@mui/material/styles' {
@@ -129,7 +129,7 @@ const theme = createTheme({
     },
     subtitle3: {
       fontSize: '16px',
-      lineHeight: '24px',
+      lineHeight: '20.11px',
       fontWeight: 'bold',
     },
     body1: {

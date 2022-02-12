@@ -5,10 +5,10 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import { Button, Container, Typography, Avatar } from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Link } from 'react-router-dom';
 import ExpandNav from '../../molecules/expandNav/ExpandNav';
+import ShowIcon from '../../atoms/Icons/showIcon';
+import iconPath from '../../atoms/Icons/iconPath';
 
 const img = require('../../atoms/Images/logo.png');
 
@@ -19,12 +19,14 @@ function Header() {
         <AppBar position="static" sx={{ bgcolor: '#FFFFFF' }} elevation={0}>
           <Toolbar>
             <Link to="/">
-              <img src={img} width="124.09px" height="60px" alt="logo" />
+              <img src={img} width="124.09px" height="26px" alt="logo" />
             </Link>
             <IconButton>
-              <SearchIcon
-                sx={{ ml: 4, mr: 4, color: '#03314B' }}
-                fontSize="large"
+              <ShowIcon
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                d={iconPath.searchIcon}
               />
             </IconButton>
             <ExpandNav />
@@ -32,14 +34,19 @@ function Header() {
               variant="body1"
               component="h6"
               fontSize={16}
-              sx={{ color: '#03314B', ml: 4, minWidth: 80 }}
+              sx={{ color: '#03314B', ml: 4, minxWidth: 80 }}
             >
               My Library
             </Typography>
             <Box sx={{ minWidth: 700, textAlign: 'right' }}>
               <Button sx={{ flexShrink: 1 }}>
                 <Avatar sx={{ bgcolor: '#69A6E3' }}>A</Avatar>
-                <ExpandMoreIcon sx={{ color: '#03314B' }} />
+                <ShowIcon
+                  width="14"
+                  height="8"
+                  viewBox="0 0 14 8"
+                  d={iconPath.downArrowIcon}
+                />
               </Button>
             </Box>
           </Toolbar>

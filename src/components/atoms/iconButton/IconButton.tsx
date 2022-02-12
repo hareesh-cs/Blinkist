@@ -6,7 +6,7 @@ export interface IconButtonProps {
 }
 
 function IconButtonComponent({ children }: IconButtonProps) {
-  return <IconButton data-textid="3">{children}</IconButton>;
+  return <IconButton>{children}</IconButton>;
 }
 
 export default IconButtonComponent;

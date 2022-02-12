@@ -18,12 +18,23 @@ const img = require('../../atoms/Images/2.png');
 const StyledTypography = styled(Typography)`
   font-family: Cera Pro;
 `;
+const StyledButton = styled(Button)`
+  height: 44;
+  width: 178;
+  color: #03314b;
+  borderradius: 4px;
+  fontsize: 16px;
+  background-color: #2ce080;
+
+  &:hover {
+    background-color: green;
+  }
+`;
 
 function BookView() {
   return (
-    <>
-      {/* <Box sx={{maxWidth:1440,maxHeight:1443,mt:'80px',ml:3}}> */}
-      <Container sx={{ mt: '80px' }} data-testid="bview">
+    <div>
+      <Container sx={{ mt: '80px' }}>
         <Box
           sx={{
             width: 180,
@@ -103,7 +114,7 @@ function BookView() {
                 15-minute read
               </StyledTypography>
             </Box>
-            <Stack direction="row" spacing={3}>
+            <Stack direction="row" spacing={6} sx={{ ml: 264, mt: 464 }}>
               <Button
                 sx={{
                   border: '1px solid #042330',
@@ -116,7 +127,9 @@ function BookView() {
               >
                 Read Now
               </Button>
-              <Link to="/" style={{ textDecoration: 'none' }} />
+              <Link to="/" style={{ textDecoration: 'none' }}>
+                <StyledButton>Finished Reading</StyledButton>
+              </Link>
               <Box sx={{ display: 'inline-flex', alignItems: 'center' }}>
                 <Button sx={{ fontSize: '16px', color: '#03314B' }}>
                   Send to Kindle
@@ -125,19 +138,27 @@ function BookView() {
                   width="17"
                   height="12"
                   viewBox="0 0 13 18"
-                  d={iconPath.editIcon}
+                  d={iconPath.rightIcon}
                 />
               </Box>
             </Stack>
+            <Box
+              sx={{
+                width: 600,
+                height: 100,
+                ml: -5,
+                paddingBottom: 10,
+              }}
+            >
+              <BookInfo />
+            </Box>
           </Box>
           <Box>
             <img src={img} alt="book pic" width={304} height={304} />
           </Box>
         </Box>
-
-        <BookInfo />
       </Container>
-    </>
+    </div>
   );
 }
 

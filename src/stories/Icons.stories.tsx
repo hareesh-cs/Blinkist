@@ -210,7 +210,7 @@ export function RightIcon() {
       width="17"
       height="12"
       viewBox="0 0 13 18"
-      d={iconPath.editIcon}
+      d={iconPath.rightIcon}
     />
   );
 }
@@ -221,6 +221,36 @@ export function PersonIcon() {
       height="20"
       viewBox="0 0 20 20"
       d={iconPath.personIcon}
+    />
+  );
+}
+export function hospitalIcon() {
+  return (
+    <ShowIcon
+      width="22"
+      height="20"
+      viewBox="0 0 22 20"
+      d={iconPath.hospitalIcon}
+    />
+  );
+}
+export function ScienceIcon() {
+  return (
+    <ShowIcon
+      width="18"
+      height="20"
+      viewBox="0 0 18 20"
+      d={iconPath.scienceIcon}
+    />
+  );
+}
+export function PsychologyIcon() {
+  return (
+    <ShowIcon
+      width="19"
+      height="20"
+      viewBox="0 0 19 20"
+      d={iconPath.psychologyIcon}
     />
   );
 }

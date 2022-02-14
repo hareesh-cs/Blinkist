@@ -4,7 +4,7 @@ import { Meta } from '@storybook/react';
 import BookView from '../components/organisms/bookView/BookView';
 
 export default {
-  title: 'molecules/BookView',
+  title: 'organisms/BookView',
   component: BookView,
 } as Meta;
 

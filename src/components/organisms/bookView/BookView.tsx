@@ -9,11 +9,11 @@ import {
 } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import { useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import ShowIcon from '../../atoms/Icons/showIcon';
 import iconPath from '../../atoms/Icons/iconPath';
 import BookInfo from '../../molecules/bookInfo/BookInfo';
-// import { AddToFinish } from '../../../actions/AddToFinish';
+import { AddToFinish } from '../../../actions/AddToFinish';
 
 const img = require('../../atoms/Images/2.png');
 
@@ -34,6 +34,7 @@ const StyledButton = styled(Button)`
 `;
 
 function BookView() {
+  const dispatch = useDispatch();
   return (
     <div>
       <Container sx={{ mt: '80px' }}>
@@ -129,8 +130,14 @@ function BookView() {
               >
                 Read Now
               </Button>
-              <Link to="/" style={{ textDecoration: 'none' }}>
-                <StyledButton>Finished Reading</StyledButton>
+              <Link
+                data-testid="viewlink"
+                to="/"
+                style={{ textDecoration: 'none' }}
+              >
+                <StyledButton onClick={() => dispatch(AddToFinish())}>
+                  Finished Reading
+                </StyledButton>
               </Link>
               <Box sx={{ display: 'inline-flex', alignItems: 'center' }}>
                 <Button sx={{ fontSize: '16px', color: '#03314B' }}>

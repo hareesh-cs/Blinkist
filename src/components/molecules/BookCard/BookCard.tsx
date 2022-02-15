@@ -41,7 +41,7 @@ function BookCard({
   return (
     <Grid item xs={4}>
       <Card
-        data-testid="card"
+        data-testid="bookcard"
         sx={{
           width: '284px',
           height: '466px',
@@ -50,7 +50,7 @@ function BookCard({
           background: '#FFFFFF',
         }}
       >
-        <Link to="/Entrepreneurship/BookDetails">
+        <Link data-testId="bookLink" to="/Entrepreneurship/BookDetails">
           <CardMedia
             component="img"
             image={image}

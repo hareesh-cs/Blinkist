@@ -27,7 +27,7 @@ export function AddToLib() {
   return (
     <StyledBox>
       <AddIcon sx={{ pr: 2 }} />
-      <Typography fontSize="16px" fontFamily="Cera Pro">
+      <Typography fontSize="16px" fontFamily="Cera Pro" data-testid="AddToLib">
         Add to lib
       </Typography>
     </StyledBox>

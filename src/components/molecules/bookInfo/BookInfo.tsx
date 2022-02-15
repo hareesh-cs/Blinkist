@@ -64,6 +64,7 @@ export default function BookInfo() {
           borderBottom: 1,
           borderColor: 'divider',
         }}
+        data-testid="info"
       >
         <Tabs
           value={value}

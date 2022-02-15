@@ -13,8 +13,7 @@ const StyledTypography = styled(Typography)`
 
 function Banner() {
   return (
-    <>
-      {/* <Box sx={{width:1440,mb:'58px'}}> */}
+    <div>
       <Container sx={{ width: 1145, mt: '52px' }}>
         <Box
           sx={{
@@ -57,7 +56,7 @@ function Banner() {
           </Box>
         </Box>
       </Container>
-    </>
+    </div>
   );
 }
 export default Banner;

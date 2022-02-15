@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/home/harech/Desktop/storybook/my-app/src/components/organisms/header/Header.test.tsx">
+    <testCase name="&lt;MockHeader&gt; check if it is present" duration="710"/>
+    <testCase name="&lt;MockHeader&gt; check if it is truthy" duration="82"/>
+  </file>
+  <file path="/home/harech/Desktop/storybook/my-app/src/components/molecules/BookCard/BookCard.test.tsx">
+    <testCase name="&lt;BookCard&gt; check the card props" duration="446"/>
+    <testCase name="&lt;BookCard&gt; check if the card exits" duration="89"/>
+    <testCase name="&lt;BookCard&gt; check if link is present" duration="49"/>
+  </file>
+  <file path="/home/harech/Desktop/storybook/my-app/src/components/organisms/eBooks/EBooks.test.tsx">
+    <testCase name="&lt;MockBooks&gt; check if it is present" duration="847"/>
+    <testCase name="&lt;MockBooks&gt; check if it is truthy" duration="384"/>
+  </file>
+  <file path="/home/harech/Desktop/storybook/my-app/src/components/organisms/bookList/BookList.test.tsx">
+    <testCase name="&lt;BookList&gt; check if it is present" duration="1011"/>
+    <testCase name="&lt;BookList&gt; check if it is truthy" duration="430"/>
+  </file>
+  <file path="/home/harech/Desktop/storybook/my-app/src/components/molecules/expandNav/ExpandNav.test.tsx">
+    <testCase name="&lt;ExpandNav&gt; check the if is present" duration="523"/>
+    <testCase name="&lt;ExpandNav&gt; check the if is truthy" duration="87"/>
+  </file>
+  <file path="/home/harech/Desktop/storybook/my-app/src/components/organisms/bookView/BookView.test.tsx">
+    <testCase name="&lt;BookList&gt; check if it is present" duration="936"/>
+    <testCase name="&lt;BookList&gt; check if it is truthy" duration="153"/>
+    <testCase name="&lt;BookList&gt; check if the link is defined" duration="112"/>
+    <testCase name="&lt;BookList&gt; check if the link is truthy" duration="100"/>
+  </file>
+  <file path="/home/harech/Desktop/storybook/my-app/src/components/organisms/bookState/BookState.test.tsx">
+    <testCase name="&lt;MockBookState&gt; check if it is present" duration="1265"/>
+    <testCase name="&lt;MockBookState&gt; check if it is truthy" duration="524"/>
+    <testCase name="&lt;MockBookState&gt; check if tabs are defined" duration="454"/>
+    <testCase name="&lt;MockBookState&gt; check if tabs are Truthy" duration="405"/>
+  </file>
+  <file path="/home/harech/Desktop/storybook/my-app/src/components/molecules/bookInfo/BookInfo.test.tsx">
+    <testCase name="&lt;BookInfo&gt; check the if is present" duration="242"/>
+    <testCase name="&lt;BookInfo&gt; check the if is truthy" duration="51"/>
+  </file>
+  <file path="/home/harech/Desktop/storybook/my-app/src/components/organisms/finished/Finished.test.tsx">
+    <testCase name="&lt;MockFinished&gt; check if it is present" duration="295"/>
+    <testCase name="&lt;MockFinished&gt; check if it is truthy" duration="53"/>
+  </file>
+  <file path="/home/harech/Desktop/storybook/my-app/src/components/molecules/searchBar/SearchBar.test.tsx">
+    <testCase name="&lt;SearchFeild&gt; check the if is present" duration="46"/>
+    <testCase name="&lt;SearchFeild&gt; check the search is truthy" duration="18"/>
+  </file>
+  <file path="/home/harech/Desktop/storybook/my-app/src/components/organisms/footer/Footer.test.tsx">
+    <testCase name="&lt;Footer&gt; check if it is present" duration="76"/>
+    <testCase name="&lt;Footer&gt; check if it is truthy" duration="46"/>
+  </file>
+  <file path="/home/harech/Desktop/storybook/my-app/src/components/molecules/AddToLib/AddToLib.test.tsx">
+    <testCase name="&lt;AddToLib&gt; check the text of AddToLib" duration="45"/>
+    <testCase name="&lt;AddToLib&gt; check if AddToLib is present" duration="12"/>
+  </file>
+  <file path="/home/harech/Desktop/storybook/my-app/src/components/atoms/ProgressBar/ProgressBar.test.tsx">
+    <testCase name="Unit Test - Progress Bar" duration="13"/>
+  </file>
+  <file path="/home/harech/Desktop/storybook/my-app/src/components/atoms/Avatar/Avatar.test.tsx">
+    <testCase name="Unit Test - Avatar" duration="11"/>
+  </file>
+  <file path="/home/harech/Desktop/storybook/my-app/src/components/molecules/banner/Banner.test.tsx">
+    <testCase name="&lt;Banner&gt; check the if is present" duration="20"/>
+    <testCase name="&lt;Banner&gt; check the if is truthy" duration="8"/>
+  </file>
+</testExecutions>

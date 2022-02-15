@@ -54,7 +54,7 @@ export default function BookState() {
 
   return (
     <Container>
-      <Box sx={{ ml: 1.5, mt: '70px' }} data-testid="bstate">
+      <Box sx={{ ml: 1.5, mt: '70px' }} data-testid="bookstate">
         <Box sx={{ width: 200, height: 45, mb: '60px' }}>
           <Typography
             variant="h1"

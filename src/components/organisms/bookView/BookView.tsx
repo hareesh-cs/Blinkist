@@ -37,7 +37,7 @@ function BookView() {
   const dispatch = useDispatch();
   return (
     <div>
-      <Container sx={{ mt: '80px' }}>
+      <Container sx={{ mt: '80px' }} data-testid="bview">
         <Box
           sx={{
             width: 180,

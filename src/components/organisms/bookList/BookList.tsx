@@ -8,19 +8,19 @@ import books from '../../../db.json';
 import { getState } from '../../../actions/AddToFinish';
 
 export function BookList() {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    fetch('http://localhost:6001/ebooks')
-      .then((res) => res.json())
-      .then(
-        (data) => dispatch(getState(data)),
-        (err) => dispatch({ type: 'FAILURE', err })
-      );
-  });
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   fetch('http://localhost:6001/ebooks')
+  //     .then((res) => res.json())
+  //     .then(
+  //       (data) => dispatch(getState(data)),
+  //       (err) => dispatch({ type: 'FAILURE', err })
+  //     );
+  // });
   return (
     <div>
       <Container>
-        <Box sx={{ ml: -5 }}>
+        <Box sx={{ ml: -5 }} data-testid="booklist">
           <Grid container rowSpacing="25px">
             {books.map((book: any) => (
               <BookCard {...book} />

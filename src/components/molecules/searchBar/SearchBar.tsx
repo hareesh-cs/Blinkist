@@ -7,7 +7,7 @@ export function SearchField() {
   return (
     // <Box sx={{width:1440,mb:'80px'}}>
     <Container>
-      <Box sx={{ ml: 1.5, mb: '80px' }} data-testid="search">
+      <Box sx={{ ml: 1.5, mb: '80px' }} data-testid="searchbar">
         <Box
           sx={{
             display: 'flex',

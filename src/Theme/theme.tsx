@@ -166,7 +166,7 @@ const theme = createTheme({
       },
     },
   },
-  spacing: ['4px', '8px', '12px', '16px', '20px', '24px', '32px', '48px'],
+  spacing: [4, 8, 12, 16, 20, 24, 32, 48],
 });
 
 export default theme;

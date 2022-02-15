@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import AddToFinish from './AddBook';
+import AddToFinish from './AddToFinish';
 
 export {};
 

@@ -3,7 +3,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/function-component-definition */
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeProvider } from '@mui/material';
 import IconButton, {
   IconButtonProps,
@@ -25,9 +25,11 @@ export default {
       </ThemeProvider>
     ),
   ],
-} as Meta;
+} as ComponentMeta<typeof IconButton>;
 
-const Template: Story<IconButtonProps> = (args) => <IconButton {...args} />;
+const Template: ComponentStory<typeof IconButton> = (args) => (
+  <IconButton {...args} />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {

@@ -1,13 +1,13 @@
 /* eslint-disable object-curly-newline */
 import React from 'react';
 
-interface props {
+interface Props {
   width: string;
   height: string;
   viewBox: string;
   d: string;
 }
-function showIcon({ width, d, height, viewBox }: props) {
+function showIcon({ width, d, height, viewBox }: Props) {
   return (
     <div>
       <svg

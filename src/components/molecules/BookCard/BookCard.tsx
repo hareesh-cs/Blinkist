@@ -18,7 +18,7 @@ import iconPath from '../../atoms/Icons/iconPath';
 import { AddToLib } from '../AddToLib/AddToLib';
 import ProgressBar from '../../atoms/ProgressBar/ProgressBar';
 
-interface BookCardprops {
+export interface BookCardprops {
   id?: number;
   image: string;
   title: string;

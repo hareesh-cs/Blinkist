@@ -125,7 +125,7 @@ const theme = createTheme({
     subtitle2: {
       fontSize: '18px',
       lineHeight: '24px',
-      fontWeight: 'bold',
+      fontWeight: 'normal',
     },
     subtitle3: {
       fontSize: '16px',

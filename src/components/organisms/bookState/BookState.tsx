@@ -18,6 +18,11 @@ const StyledTab = styled(Tab)`
   font-family: Cera Pro;
   color: black;
 `;
+const StyledBox = styled(Box)`
+display: 'flex',
+justifyContent: 'flex-start',
+width: '340px',
+`;
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -81,31 +86,19 @@ export default function BookState() {
               <StyledTab
                 disableRipple
                 label={
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      justifyContent: 'flex-start',
-                      width: '340px',
-                    }}
-                  >
-                    <Typography fontFamily="Cera Pro">
+                  <StyledBox>
+                    <Typography variant="subtitle2">
                       Currently reading
                     </Typography>
-                  </Box>
+                  </StyledBox>
                 }
               />
               <StyledTab
                 disableRipple
                 label={
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      justifyContent: 'flex-start',
-                      width: '340px',
-                    }}
-                  >
-                    <Typography fontFamily="Cera Pro">Finished</Typography>
-                  </Box>
+                  <StyledBox>
+                    <Typography variant="subtitle2">Finished</Typography>
+                  </StyledBox>
                 }
               />
             </Tabs>

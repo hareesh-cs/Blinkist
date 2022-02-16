@@ -1,6 +1,8 @@
+/* eslint-disable comma-dangle */
 import React from 'react';
 import AddIcon from '@mui/icons-material/Add';
 import { Box, styled, Typography } from '@mui/material';
+import axios from 'axios';
 
 const StyledBox = styled(Box)`
   width: 284px;
@@ -24,8 +26,22 @@ const StyledBox = styled(Box)`
 `;
 
 export function AddToLib() {
+  const article = {
+    id: 2,
+    title: 'Beyond Entrepreneurship',
+    author: 'Jim Collins & Bill Lazier',
+    time: '13',
+    reads: '1.9k',
+    image: '/Images/2.png',
+    status: false,
+    progress: 88,
+  };
+  const addToL = async () => {
+    await axios.post('http://localhost:6001/mylibrary', article);
+  };
+
   return (
-    <StyledBox>
+    <StyledBox onClick={addToL}>
       <AddIcon sx={{ pr: 2 }} />
       <Typography fontSize="16px" fontFamily="Cera Pro" data-testid="AddToLib">
         Add to lib

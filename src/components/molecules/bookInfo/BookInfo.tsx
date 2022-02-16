@@ -8,6 +8,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { Container, styled } from '@mui/material';
+import { TabPanel } from '../tabPanel/TabPanel';
 
 const StyledTab = styled(Tab)`
   text-transform: none;
@@ -16,40 +17,11 @@ const StyledTab = styled(Tab)`
   font-family: Cera Pro;
   color: black;
 `;
-
-interface TabPanelProps {
-  children?: React.ReactNode;
-  index: number;
-  value: number;
-}
-
-function TabPanel(props: TabPanelProps) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
-  );
-}
-
-function a11yProps(index: number) {
-  return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
-  };
-}
-
+const StyledBox = styled(Box)`
+  display: flex;
+  justify-content: flex-start;
+  color: black;
+`;
 export default function BookInfo() {
   const [value, setValue] = React.useState(0);
 
@@ -75,47 +47,26 @@ export default function BookInfo() {
           <StyledTab
             disableRipple
             label={
-              <Box
-                sx={{
-                  display: 'flex',
-                  justifyContent: 'flex-start',
-                  color: 'black',
-                }}
-              >
+              <StyledBox>
                 <Typography fontFamily="Cera Pro">Sypnosis</Typography>
-              </Box>
+              </StyledBox>
             }
-            {...a11yProps(0)}
           />
           <StyledTab
             disableRipple
             label={
-              <Box
-                sx={{
-                  display: 'flex',
-                  justifyContent: 'flex-start',
-                  color: 'black',
-                }}
-              >
+              <StyledBox>
                 <Typography fontFamily="Cera Pro">Who is it for?</Typography>
-              </Box>
+              </StyledBox>
             }
-            {...a11yProps(1)}
           />
           <StyledTab
             disableRipple
             label={
-              <Box
-                sx={{
-                  display: 'flex',
-                  justifyContent: 'flex-start',
-                  color: 'black',
-                }}
-              >
+              <StyledBox>
                 <Typography fontFamily="Cera Pro">About the author</Typography>
-              </Box>
+              </StyledBox>
             }
-            {...a11yProps(2)}
           />
         </Tabs>
         <Box>

@@ -2,7 +2,9 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import BookState from '../components/organisms/bookState/BookState';
+import store from '../store';
 
 export default {
   title: 'organisms/StateOfBook',
@@ -12,7 +14,9 @@ export default {
 export function BookStateDemo() {
   return (
     <BrowserRouter>
-      <BookState />
+      <Provider store={store}>
+        <BookState />
+      </Provider>
     </BrowserRouter>
   );
 }

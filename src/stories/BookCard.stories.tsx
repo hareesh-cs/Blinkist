@@ -5,6 +5,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import { ThemeProvider } from '@mui/material';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { BrowserRouter } from 'react-router-dom';
 import BookCard from '../components/molecules/BookCard/BookCard';
 import theme from '../Theme/theme';
 
@@ -23,7 +24,9 @@ export default {
 } as ComponentMeta<typeof BookCard>;
 
 const Template: ComponentStory<typeof BookCard> = (args) => (
-  <BookCard {...args} />
+  <BrowserRouter>
+    <BookCard {...args} />
+  </BrowserRouter>
 );
 export const bookCard = Template.bind({});
 bookCard.args = {

@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import ShowIcon from '../../atoms/Icons/showIcon';
 import iconPath from '../../atoms/Icons/iconPath';
-import BookInfo from '../../molecules/bookInfo/BookInfo';
+import BookInfo from '../bookInfo/BookInfo';
 import { AddToFinish } from '../../../actions/AddToFinish';
 
 const img = require('../../atoms/Images/2.png');

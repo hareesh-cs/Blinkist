@@ -1,10 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { Meta } from '@storybook/react';
-import BookInfo from '../components/molecules/bookInfo/BookInfo';
+import BookInfo from '../components/organisms/bookInfo/BookInfo';
 
 export default {
-  title: 'molecules/BookInfo',
+  title: 'organisms/BookInfo',
   component: BookInfo,
 } as Meta;
 

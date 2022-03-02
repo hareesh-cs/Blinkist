@@ -9,7 +9,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { Container, styled } from '@mui/material';
-import { TabPanel } from '../tabPanel/TabPanel';
+import { TabPanel } from '../../molecules/tabPanel/TabPanel';
 
 const StyledTab = styled(Tab)`
   text-transform: none;

@@ -5,7 +5,7 @@ import Header from '../../organisms/header/Header';
 
 function BookDetails() {
   return (
-    <div data-testid="bookdetails">
+    <div>
       <Header />
       <BookView />
       <Footer />

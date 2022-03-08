@@ -6,8 +6,8 @@
 import { ThemeProvider } from '@mui/material';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { BrowserRouter } from 'react-router-dom';
-import BookCard from '../components/molecules/BookCard/BookCard';
-import theme from '../Theme/theme';
+import BookCard from './BookCard';
+import theme from '../../../Theme/theme';
 
 const image2 = require('../components/atoms/Images/2.png');
 

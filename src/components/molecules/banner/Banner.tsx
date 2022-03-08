@@ -22,6 +22,8 @@ function Banner() {
             display: 'flex',
             justifyContent: 'space-around',
             mb: '58px',
+            ml: 7,
+            mr: 5,
           }}
           data-testid="banner"
         >

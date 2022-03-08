@@ -2,7 +2,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { Meta } from '@storybook/react';
-import Footer from '../components/organisms/footer/Footer';
+import Footer from './Footer';
 
 export default {
   title: 'organisms/Footer',

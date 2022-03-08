@@ -1,11 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { Meta } from '@storybook/react';
-import Banner from '../components/molecules/banner/Banner';
+import BookInfo from './BookInfo';
 
 export default {
-  title: 'molecules/Banner',
-  component: Banner,
+  title: 'organisms/BookInfo',
+  component: BookInfo,
 } as Meta;
 
-export const primary = () => <Banner />;
+export const primary = () => <BookInfo />;

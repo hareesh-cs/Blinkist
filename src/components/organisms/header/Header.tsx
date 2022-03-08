@@ -4,18 +4,19 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import { Button, Container, Typography, Avatar } from '@mui/material';
+import { Button, Container, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import ExpandNav from '../../molecules/expandNav/ExpandNav';
 import ShowIcon from '../../atoms/Icons/showIcon';
 import iconPath from '../../atoms/Icons/iconPath';
+import Avatar from '../../atoms/Avatar/Avatar';
 
 const img = require('../../atoms/Images/logo.png');
 
 function Header() {
   return (
     <Container>
-      <Box sx={{ flexGrow: 1 }} data-testid="header">
+      <Box sx={{ flexGrow: 1, ml: 7, mr: 5 }} data-testid="header">
         <AppBar position="static" sx={{ bgcolor: '#FFFFFF' }} elevation={0}>
           <Toolbar>
             <Link to="/">
@@ -34,13 +35,13 @@ function Header() {
               variant="body1"
               component="h6"
               fontSize={16}
-              sx={{ color: '#03314B', ml: 4, minxWidth: 80 }}
+              sx={{ color: '#03314B', ml: 5 }}
             >
               My Library
             </Typography>
-            <Box sx={{ minWidth: 700, textAlign: 'right' }}>
+            <Box sx={{ ml: 65, textAlign: 'right' }}>
               <Button sx={{ flexShrink: 1 }}>
-                <Avatar sx={{ bgcolor: '#69A6E3' }}>A</Avatar>
+                <Avatar letter="A" />
                 <ShowIcon
                   width="14"
                   height="8"

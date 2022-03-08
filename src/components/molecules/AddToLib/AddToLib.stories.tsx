@@ -1,4 +1,4 @@
-import { AddToLib } from '../components/molecules/AddToLib/AddToLib';
+import { AddToLib } from './AddToLib';
 
 export default {
   title: 'molecules/AddToLib',

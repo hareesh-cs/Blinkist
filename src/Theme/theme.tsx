@@ -114,8 +114,9 @@ const theme = createTheme({
     },
     h3: {
       fontSize: '24px',
+      fontStyle: 'normal',
       lineHeight: '30.17px',
-      fontWeight: 'bold',
+      fontWeight: '700',
     },
     subtitle1: {
       fontSize: '24px',

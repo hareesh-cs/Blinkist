@@ -3,7 +3,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { Meta } from '@storybook/react';
-import { SearchField } from '../components/molecules/searchBar/SearchBar';
+import { SearchField } from './SearchBar';
 
 export default {
   title: 'molecules/SearchField',

@@ -35,21 +35,21 @@ export default function BookState() {
 
   return (
     <Container>
-      <Box sx={{ ml: 1.5, mt: '70px' }} data-testid="bookstate">
-        <Box sx={{ width: 200, height: 45, mb: '60px' }}>
+      <Box sx={{ ml: 10, mt: '70px' }} data-testid="bookstate">
+        <Box sx={{ width: 300, height: 45, mb: '60px' }}>
           <Typography
             variant="h1"
             sx={{
               fontSize: 36,
               fontWeight: 700,
               fontFamily: 'Cera Pro',
-              ml: 2.5,
+              ml: 5,
             }}
           >
             My Library
           </Typography>
         </Box>
-        <Box sx={{ width: '100%', ml: 2.3 }}>
+        <Box sx={{ width: '90%', ml: 2.5 }}>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs
               value={value}

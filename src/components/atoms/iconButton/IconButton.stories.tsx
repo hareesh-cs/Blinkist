@@ -6,12 +6,10 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeProvider } from '@mui/material';
-import IconButton, {
-  IconButtonProps,
-} from '../components/atoms/iconButton/IconButton';
-import theme from '../Theme/theme';
-import ShowIcon from '../components/atoms/Icons/showIcon';
-import iconPath from '../components/atoms/Icons/iconPath';
+import IconButton, { IconButtonProps } from './IconButton';
+import theme from '../../../Theme/theme';
+import ShowIcon from '../Icons/showIcon';
+import iconPath from '../Icons/iconPath';
 
 export default {
   title: 'atoms/IconButton',

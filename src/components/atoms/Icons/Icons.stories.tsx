@@ -1,8 +1,8 @@
 /* eslint-disable import/order */
 /* eslint-disable @typescript-eslint/no-use-before-define */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import ShowIcon from '../components/atoms/Icons/showIcon';
-import iconPath from '../components/atoms/Icons/iconPath';
+import ShowIcon from './showIcon';
+import iconPath from './iconPath';
 
 export default {
   title: 'atoms/Icons',

@@ -4,7 +4,7 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import { BrowserRouter } from 'react-router-dom';
-import Header from '../components/organisms/header/Header';
+import Header from './Header';
 
 export default {
   title: 'organisms/Header',

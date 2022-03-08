@@ -24,7 +24,7 @@ export function EBooks() {
   return (
     <div>
       <Container>
-        <Box data-testid="ebooks">
+        <Box sx={{ ml: 7 }} data-testid="ebooks">
           <Typography
             fontFamily="Cera Pro"
             fontSize="24px"
@@ -33,18 +33,14 @@ export function EBooks() {
               width: 194,
               height: 30,
               mb: '20px',
-              ml: 2,
+              ml: 4,
             }}
           >
             Trending Blinks
           </Typography>
         </Box>
-        <Box sx={{ ml: 2 }}>
-          <Grid
-            container
-            rowSpacing="25px"
-            columnSpacing={{ xs: 2, sm: 3, md: 3 }}
-          >
+        <Box sx={{ ml: 10, mr: 6 }}>
+          <Grid container rowSpacing="25px">
             {bookcards !== null && bookcards !== undefined
               ? bookcards.map((book) => (
                   <BookCard

@@ -24,7 +24,7 @@ export function BookList() {
   return (
     <div>
       <Container>
-        <Box sx={{ ml: -5 }} data-testid="booklist">
+        <Box sx={{ ml: -5, mr: -3 }} data-testid="booklist">
           <Grid container rowSpacing="25px">
             {bookcards !== null && bookcards !== undefined
               ? bookcards.map((book) => (

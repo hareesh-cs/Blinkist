@@ -25,7 +25,12 @@ function Footer() {
           }}
         >
           <Box
-            sx={{ display: 'flex', justifyContent: 'space-between', ml: 1.5 }}
+            sx={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              ml: 7,
+              mr: 6,
+            }}
           >
             <Box>
               <Box sx={{ width: '99px', height: '24px', pb: '32px' }}>

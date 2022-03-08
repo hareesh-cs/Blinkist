@@ -93,7 +93,7 @@ export default function ExpandNav() {
     <>
       <Button
         onClick={handleOpen}
-        sx={{ textTransform: 'none' }}
+        sx={{ textTransform: 'none', flexShrink: 1 }}
         data-testid="expand"
       >
         <UBox

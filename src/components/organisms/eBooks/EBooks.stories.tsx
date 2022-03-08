@@ -2,15 +2,15 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 import { BrowserRouter } from 'react-router-dom';
-import { BookList } from '../components/organisms/bookList/BookList';
+import { EBooks } from './EBooks';
 
 export default {
-  title: 'organisms/BookList',
-  component: BookList,
+  title: 'organisms/EBooks',
+  component: EBooks,
 } as Meta;
 
 export const primary = () => (
   <BrowserRouter>
-    <BookList />
+    <EBooks />
   </BrowserRouter>
 );

@@ -3,8 +3,8 @@ import React from 'react';
 import { Meta } from '@storybook/react';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import BookView from '../components/organisms/bookView/BookView';
-import store from '../store';
+import BookView from './BookView';
+import store from '../../../store';
 
 export default {
   title: 'organisms/BookView',

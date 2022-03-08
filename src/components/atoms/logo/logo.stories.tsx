@@ -3,7 +3,7 @@
 /* eslint-disable import/no-unresolved */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/react-in-jsx-scope */
-import Logo from '../components/atoms/logo/Logo';
+import Logo from './Logo';
 
 export default {
   title: 'atoms/Logo',

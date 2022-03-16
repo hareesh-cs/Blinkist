@@ -28,7 +28,7 @@ function Footer() {
             sx={{
               display: 'flex',
               justifyContent: 'space-between',
-              ml: 7,
+              ml: 10,
               mr: 6,
             }}
           >
@@ -86,7 +86,7 @@ function Footer() {
               <StyledTypography>Code of Conduct</StyledTypography>
             </Box>
           </Box>
-          <Box sx={{ display: 'flex', ml: 2 }}>
+          <Box sx={{ display: 'flex', ml: 8 }}>
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
               &copy;
               <Typography sx={{ color: '#6D787E', pl: '2.5px' }}>

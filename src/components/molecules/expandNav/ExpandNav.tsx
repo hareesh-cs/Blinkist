@@ -18,11 +18,12 @@ import iconPath from '../../atoms/Icons/iconPath';
 
 const style = {
   position: 'absolute' as const,
+  ml: -80,
+  width: '1570px',
   top: '88%',
-  left: '-30%',
-  width: 1840,
-  height: 398,
+  height: '400px',
   bgcolor: '#F1F6F4',
+  padding: '0px 0px 0px 14.5px',
 };
 
 const Menu = styled(Box)`
@@ -117,20 +118,18 @@ export default function ExpandNav() {
         </UBox>
       </Button>
       {open && (
-        <Box
-          onClick={handleClose}
-          sx={{ zIndex: 1, width: 10 }}
-          data-testid="popup"
-        >
+        <Box onClick={handleClose} sx={{ zIndex: 999 }} data-testid="popup">
           <Box sx={style}>
-            <Container sx={{ pt: 2 }}>
-              <Box sx={{ ml: 4 }}>
+            <Container sx={{ pt: 3 }}>
+              <Box sx={{ ml: 15 }}>
                 <Stack direction="row" spacing="180px" sx={{ pb: '24px' }}>
                   <HeadTypography>Explore by category</HeadTypography>
                   <HeadTypography>See recently added titles</HeadTypography>
                   <HeadTypography>See popular titles</HeadTypography>
                 </Stack>
-                <Divider sx={{ border: '2px solid black' }} />
+                <Divider
+                  sx={{ borderBottom: '2px solid #042330', width: '93%' }}
+                />
                 <Box
                   sx={{
                     pt: '32px',
@@ -148,7 +147,7 @@ export default function ExpandNav() {
                         d={iconPath.entrepreneurshipIcon}
                       />
                       <StyledTypography sx={{ textDecoration: 'none' }}>
-                        <StyledLink to="/Entrepreneurship">
+                        <StyledLink to="/entrepreneurship">
                           Entrepreneurship
                         </StyledLink>
                       </StyledTypography>
@@ -161,7 +160,9 @@ export default function ExpandNav() {
                         viewBox="0 0 18 20"
                         d={iconPath.scienceIcon}
                       />
-                      <StyledTypography>Science</StyledTypography>
+                      <StyledTypography>
+                        <StyledLink to="/science">Science</StyledLink>
+                      </StyledTypography>
                     </Menu>
                     <Menu>
                       <ShowIcon
@@ -170,7 +171,9 @@ export default function ExpandNav() {
                         viewBox="0 0 19 22"
                         d={iconPath.economicsIcon}
                       />
-                      <StyledTypography>Economics</StyledTypography>
+                      <StyledTypography>
+                        <StyledLink to="/economics">Economics</StyledLink>
+                      </StyledTypography>
                     </Menu>
                     <Menu>
                       <ShowIcon
@@ -179,7 +182,11 @@ export default function ExpandNav() {
                         viewBox="0 0 20 20"
                         d={iconPath.corporateCultureIcon}
                       />
-                      <StyledTypography>Corporate Culture</StyledTypography>
+                      <StyledTypography>
+                        <StyledLink to="/corporate_culture">
+                          Corporate Culture
+                        </StyledLink>
+                      </StyledTypography>
                     </Menu>
                     <Menu>
                       <ShowIcon

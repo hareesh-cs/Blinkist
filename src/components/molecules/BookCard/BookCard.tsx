@@ -50,7 +50,7 @@ function BookCard({
           background: '#FFFFFF',
         }}
       >
-        <Link data-testId="bookLink" to="/Entrepreneurship/BookDetails">
+        <Link data-testId="bookLink" to="/book_details">
           <CardMedia
             component="img"
             image={image}

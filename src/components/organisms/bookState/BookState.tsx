@@ -35,7 +35,7 @@ export default function BookState() {
 
   return (
     <Container>
-      <Box sx={{ ml: 10, mt: '70px' }} data-testid="bookstate">
+      <Box sx={{ ml: 10, mr: -5, mt: '70px' }} data-testid="bookstate">
         <Box sx={{ width: 300, height: 45, mb: '60px' }}>
           <Typography
             variant="h1"
@@ -49,8 +49,8 @@ export default function BookState() {
             My Library
           </Typography>
         </Box>
-        <Box sx={{ width: '90%', ml: 2.5 }}>
-          <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <Box sx={{ width: '95%', ml: 2.5 }}>
+          <Box sx={{ width: '90%', borderBottom: 1, borderColor: 'divider' }}>
             <Tabs
               value={value}
               onChange={handleChange}

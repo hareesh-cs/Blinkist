@@ -14,11 +14,8 @@ function App() {
         <Routes>
           <Route>
             <Route path="/" element={<Home />} />
-            <Route path="Entrepreneurship" element={<EPage />} />
-            <Route
-              path="Entrepreneurship/BookDetails"
-              element={<BookDetails />}
-            />
+            <Route path="entrepreneurship" element={<EPage />} />
+            <Route path="book_details" element={<BookDetails />} />
           </Route>
         </Routes>
       </BrowserRouter>

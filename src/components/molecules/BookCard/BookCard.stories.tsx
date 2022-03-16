@@ -9,7 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 import BookCard from './BookCard';
 import theme from '../../../Theme/theme';
 
-const image2 = require('../components/atoms/Images/2.png');
+const image2 = require('../../atoms/Images/2.png');
 
 export default {
   title: 'molecules/BookCard',
@@ -28,8 +28,8 @@ const Template: ComponentStory<typeof BookCard> = (args) => (
     <BookCard {...args} />
   </BrowserRouter>
 );
-export const bookCard = Template.bind({});
-bookCard.args = {
+export const primary = Template.bind({});
+primary.args = {
   image: image2,
   title: 'Bring your Human',
   author: 'Erica Keswin',

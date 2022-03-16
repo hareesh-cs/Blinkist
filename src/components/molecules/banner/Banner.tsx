@@ -23,7 +23,7 @@ function Banner() {
             justifyContent: 'space-around',
             mb: '58px',
             ml: 7,
-            mr: 5,
+            mr: 10,
           }}
           data-testid="banner"
         >

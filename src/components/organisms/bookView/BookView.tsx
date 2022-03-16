@@ -24,8 +24,9 @@ const StyledButton = styled(Button)`
   height: 44;
   width: 178;
   color: #03314b;
-  borderradius: 4px;
-  fontsize: 16px;
+  border: 1px solid #2ce080;
+  border-radius: 4px;
+  font-size: 16px;
   background-color: #2ce080;
 
   &:hover {
@@ -43,7 +44,7 @@ function BookView() {
             width: 180,
             height: 20,
             mb: '40px',
-            ml: 4,
+            ml: 14,
           }}
         >
           <StyledTypography
@@ -59,7 +60,7 @@ function BookView() {
             display: 'flex',
             justifyContent: 'space-between',
             mb: '70px',
-            ml: 4,
+            ml: 14,
           }}
         >
           <Box>
@@ -117,7 +118,7 @@ function BookView() {
                 15-minute read
               </StyledTypography>
             </Box>
-            <Stack direction="row" spacing={6} sx={{ ml: 264, mt: 464 }}>
+            <Stack direction="row" spacing={6}>
               <Button
                 sx={{
                   border: '1px solid #042330',
@@ -162,7 +163,7 @@ function BookView() {
               <BookInfo />
             </Box>
           </Box>
-          <Box>
+          <Box sx={{ mr: 10, align: 'right' }}>
             <img src={img} alt="book pic" width={304} height={304} />
           </Box>
         </Box>

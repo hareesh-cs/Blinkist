@@ -16,13 +16,13 @@ const img = require('../../atoms/Images/logo.png');
 function Header() {
   return (
     <Container>
-      <Box sx={{ flexGrow: 1, ml: 7, mr: 5 }} data-testid="header">
+      <Box sx={{ flexGrow: 1, ml: 9, mr: 6 }} data-testid="header">
         <AppBar position="static" sx={{ bgcolor: '#FFFFFF' }} elevation={0}>
           <Toolbar>
             <Link to="/">
               <img src={img} width="124.09px" height="26px" alt="logo" />
             </Link>
-            <IconButton>
+            <IconButton sx={{ pl: '5%', pr: '5%' }}>
               <ShowIcon
                 width="20"
                 height="20"
@@ -35,11 +35,11 @@ function Header() {
               variant="body1"
               component="h6"
               fontSize={16}
-              sx={{ color: '#03314B', ml: 5 }}
+              sx={{ pl: '5%', color: '#03314B' }}
             >
-              My Library
+              My&nbsp;Library
             </Typography>
-            <Box sx={{ ml: 65, textAlign: 'right' }}>
+            <Box sx={{ width: '100%', mr: 2, textAlign: 'right' }}>
               <Button sx={{ flexShrink: 1 }}>
                 <Avatar letter="A" />
                 <ShowIcon

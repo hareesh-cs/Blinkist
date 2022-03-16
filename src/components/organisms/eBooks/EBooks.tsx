@@ -7,8 +7,10 @@ import { Box, Container, Grid, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import BookCard, { BookCardprops } from '../../molecules/BookCard/BookCard';
+import { SearchField } from '../../molecules/searchBar/SearchBar';
 
 export function EBooks() {
+  const [bookMatch, setBookMatch] = useState([]);
   const [bookcards, setbookcards] = useState<BookCardprops[]>();
   useEffect(() => {
     async function getData() {
@@ -25,6 +27,10 @@ export function EBooks() {
     <div>
       <Container>
         <Box sx={{ ml: 7 }} data-testid="ebooks">
+          <SearchField
+            books={bookcards}
+            getFliteredBook={(e: any) => setBookMatch(e)}
+          />
           <Typography
             fontFamily="Cera Pro"
             fontSize="24px"
@@ -41,8 +47,8 @@ export function EBooks() {
         </Box>
         <Box sx={{ ml: 10, mr: 6 }}>
           <Grid container rowSpacing="25px">
-            {bookcards !== null && bookcards !== undefined
-              ? bookcards.map((book) => (
+            {bookMatch !== null && bookMatch !== undefined
+              ? bookMatch.map((book) => (
                   <BookCard
                     title={book['title']}
                     author={book['author']}
